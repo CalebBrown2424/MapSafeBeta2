@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FDE3"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/buenard2"
+          android:gravity="center"
+          android:text="@string/straydist"
+          android:textColor="#333131"
+          android:textSize="32sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.666" />
+
+      <ImageButton
+          android:id="@+id/imageButton5"
+          android:layout_width="49dp"
+          android:layout_height="39dp"
+          android:background="@null"
+          android:scaleType="fitCenter"
+          app:layout_constraintBottom_toBottomOf="@+id/textView5"
+          app:layout_constraintEnd_toEndOf="@+id/textView5"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="@+id/textView5"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="1.0"
+          app:srcCompat="@drawable/info_24px" />
+
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="65dp"
+          android:layout_height="42dp"
+          android:text="@string/on"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/textView5"
+          app:layout_constraintTop_toTopOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <Space
+       android:layout_width="match_parent"
+       android:layout_height="5dp" />
+
+   <View
+       android:id="@+id/divider"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="?android:attr/listDivider" />
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="641dp"
+       android:layout_height="110dp">
+
+      <fragment
+          android:id="@+id/google_map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="640dp"
+          android:layout_height="96dp"
+          android:layout_marginTop="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/latitude"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/buenard"
+          android:text="@string/latitude"
+          android:textSize="10sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/google_map" />
+
+      <TextView
+          android:id="@+id/longitude"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/buenard"
+          android:text="@string/Longitude"
+          android:textSize="10sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/latitude" />
+
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:fontFamily="@font/buenard"
+          android:text="@string/savedlatitude"
+          android:textSize="10sp"
+          app:layout_constraintStart_toEndOf="@+id/latitude"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView10"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/buenard"
+          android:text="@string/savedlongitude"
+          android:textSize="10sp"
+          app:layout_constraintStart_toEndOf="@+id/longitude"
+          app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="357dp"
+          android:layout_height="39dp"
+          android:text="@string/turnoffsoundpasscode"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="@+id/google_map"
+          app:layout_constraintHorizontal_bias="0.962"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.405" />
+
+      <EditText
+          android:id="@+id/editTextNumber2"
+          android:layout_width="156dp"
+          android:layout_height="34dp"
+          android:ems="10"
+          android:inputType="number"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.779"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.789" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <Space
+       android:layout_width="match_parent"
+       android:layout_height="20dp" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/federo"
+       android:gravity="center"
+       android:text="@string/distancetextview"
+       android:textStyle="italic" />
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="63dp">
+
+      <ImageButton
+          android:id="@+id/imageButton"
+          android:layout_width="80dp"
+          android:layout_height="60dp"
+          android:background="@null"
+          android:scaleType="fitCenter"
+          app:srcCompat="@drawable/real2" />
+
+      <ImageButton
+          android:id="@+id/smallplus"
+          android:layout_width="28dp"
+          android:layout_height="27dp"
+          android:background="@null"
+          android:scaleType="fitCenter"
+          app:srcCompat="@drawable/real2" />
+
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="122dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:fontFamily="@font/lato"
+          android:gravity="center|fill_vertical"
+          android:text="@string/distancemiles"
+          android:textColor="#22577A"
+          android:textSize="40sp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+      </LinearLayout>
+
+      <ImageButton
+          android:id="@+id/smallminus"
+          android:layout_width="28dp"
+          android:layout_height="27dp"
+          android:background="@null"
+          android:scaleType="fitCenter"
+          app:srcCompat="@drawable/real_removebg_preview" />
+
+      <ImageButton
+          android:id="@+id/imageButton2"
+          android:layout_width="80dp"
+          android:layout_height="60dp"
+          android:background="@null"
+          android:scaleType="fitCenter"
+          app:srcCompat="@drawable/real_removebg_preview" />
+
+   </TableRow>
+
+   <Space
+       android:layout_width="wrap_content"
+       android:layout_height="10dp" />
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="51dp">
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1" />
+
+      <Button
+          android:id="@+id/refresh"
+          android:layout_width="126dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_horizontal"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/refresh"
+          app:backgroundTint="#09D38C" />
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      <Button
+          android:id="@+id/distancebutton"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="@string/distancebutton"
+          app:backgroundTint="#09D38C" />
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="209dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="@string/currentLocation"
+          app:backgroundTint="#09D38C" />
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+   </TableRow>
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+   </TableRow>
+
+   <Space
+       android:layout_width="match_parent"
+       android:layout_height="10dp" />
+
+   <TableRow
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+
+      <TextView
+          android:id="@+id/distancetv"
+          android:layout_width="212dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans"
+          android:text="@string/distanceoutput"
+          android:textColor="#22577A"
+          android:textSize="17sp" />
+
+      <TextView
+          android:id="@+id/distancetv2"
+          android:layout_width="221dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans"
+          android:text="@string/meters"
+          android:textColor="#22577A"
+          android:textSize="17sp" />
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans"
+          android:text="@string/outside"
+          android:textColor="#22577A"
+          android:textSize="17sp" />
+
+   </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MapSafe</string>
+    <string name="latitude">"Latitude: "</string>
+    <string name="Longitude">"Longitude: "</string>
+    <string name="edittv" />
+    <string name="straydist">MapSafe</string>
+    <string name="distancemiles">1.5</string>
+    <string name="savecurrentlocation">Set Current location as base location</string>
+    <string name="currentLocation">Save Current Location As Base Location</string>
+    <string name="savedlatitude">Saved Latitude:</string>
+    <string name="savedlongitude">Saved Longitude:</string>
+    <string name="refresh">Refresh Location</string>
+    <string name="distanceoutput">Miles from save:</string>
+    <string name="distancebutton">Distance</string>
+    <string name="outside">Oustide of Boundary: </string>
+    <string name="distancetextview">Limit Distance(Miles)</string>
+    <string name="meters">Meters from save:</string>
+    <string name="back">Back</string>
+    <string name="welcometv">Welcome To MapSafe</string>
+    <string name="information">General</string>
+    <string name="overview">Overview</string>
+    <string name="overviewtext">This app is designed to help you keep track of the location of your device. Features include:</string>
+    <string name="feature1">Set boundary limit for device</string>
+    <string name="distancetext">Find distance from home location</string>
+    <string name="notified">Get alert upon exiting the set boundary distance</string>
+    <string name="HowItWorks">How It Works</string>
+    <string name="works">Press the \"on\" button in the top left corner to enable live updates, so you can run the app in the background to get notified if you exit the boundary. To set your location to your home, or \"base\" location, click the \"Save current location as base location\" button. Choose the limit distance using the buttons next to the distance number, the small buttons change the value by 0.01, and the large buttons change by 0.1(both in miles). Click the \"Distance\" button to find your current distance from your home location. Clicking \"Refresh Location\" will set the location on the map to your current location. The app automatically updates your current location every two minutes if you have \"On\" enabled.</string>
+    <string name="Info">i</string>
+    <string name="madeby">Coded by Caleb Brown, for MW AOCS 2020</string>
+    <string name="active">Active</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="turnoffsound">Turn Off Sound</string>
+    <string name="welcomeToMapSafe">Welcome To MapSafe!</string>
+    <string name="parentstv">Parents, enter a 4 digit code (Don\'t Forget it!!) for the alert deactivation.</string>
+    <string name="filler">0000</string>
+    <string name="finish">Finish</string>
+    <string name="turnoffsoundpasscode">Turn Off Sound(Enter Passcode)</string>
+    <string name="title_activity_main3">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="zero">0000</string>
+</resources>
